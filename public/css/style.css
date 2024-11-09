@@ -1,0 +1,71 @@
+/* Hide the default cursor on all elements, including interactive ones */
+*, button, a, input, select, textarea {
+    cursor: none;
+}
+
+/* Custom cursor styling */
+body::after {
+    content: '';
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightblue;
+    pointer-events: none; /* Allows clicks to pass through */
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    left: var(--cursorX);
+    top: var(--cursorY);
+}
+
+
+
+/* Home Page Animated Text */
+.animated-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    line-height: 1.6;
+    animation: typing-loop 12s steps(88) infinite;
+    position: relative;
+    padding-right: 20px; /* Space to accommodate the circle */
+}
+
+/* Blinking light blue circle cursor */
+.animated-text::after {
+    content: '';
+    position: absolute;
+    right: 0px; /* Position circle next to the text */
+    top: 20%;
+    transform: translateY(-50%); /* Center vertically with the text */
+    width: 10px; /* Circle size */
+    height: 10px; /* Circle size */
+    background-color: rgba(101, 216, 255, 0.9); /* Light blue color with slight transparency */
+    border-radius: 50%; /* Make it circular */
+    animation: blink 0.75s step-end infinite;
+}
+
+/* Keyframes for typing and erasing effect */
+@keyframes typing-loop {
+    0% {
+        width: 0;
+    }
+    45% {
+        width: 100%;
+    }
+    55% {
+        width: 100%; /* Pause at full width for a moment */
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* Keyframes for blinking effect */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
