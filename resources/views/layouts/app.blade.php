@@ -38,10 +38,10 @@
                             <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">Home</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="/about">About Me</a>
+                            <a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="/about">About Us</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="/contact">Contact Me</a>
+                            <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="/contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
