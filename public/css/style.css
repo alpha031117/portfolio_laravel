@@ -106,3 +106,6 @@ body::after {
 }
 
 
+.navbar-nav .nav-link.active {
+    color: #fff; /* Active link color */
+}
