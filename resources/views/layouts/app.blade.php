@@ -19,17 +19,17 @@
 <body class="light:bg-white dark:bg-gray-900 transition-colors duration-300" style="background-image:url('images/bg.gif')">
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="/images/navbar_icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                    <span class="ms-2">Personal Profile</span>
+                    <span class="ms-2 text-primary" style="font-weight: 500;">Personal Profile</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item ms-3">
                             <a class="nav-link active" aria-current="page" href="/home">Home</a>
                         </li>
