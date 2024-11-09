@@ -69,3 +69,40 @@ body::after {
     }
 }
 
+/* Contact Us Page */
+.card-custom {
+    max-width: 70%; /* Set the max-width to 60% */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+/* Ensure carousel controls are visible and well-positioned */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;  /* Position them absolutely to the sides */
+    top: 50%;            /* Center the controls vertically */
+    transform: translateY(-50%); /* Offset for proper vertical centering */
+    z-index: 10;         /* Ensure controls are above carousel content */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: 300px;
+    right: 10px; /* Position the 'Next' button on the right */
+}
+
+/* Make carousel control icons black */
+/* Make the carousel control buttons black */
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    border-color: blue; /* Optional: changes the border to match the icons */
+}
+
+/* Change the carousel control icons (previous and next) to primary blue using CSS filters */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(31%) sepia(73%) saturate(513%) hue-rotate(177deg) brightness(96%) contrast(97%);
+}
+
+
