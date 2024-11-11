@@ -167,14 +167,9 @@ body::after {
 
 .counter-wrapper {
     display: flex;
-    justify-content: center;
-    gap: 50px; /* Adjust the gap between counters */
-}
-
-.count-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 5px; /* Adjust gap between the number and "+" sign */
+    justify-content: space-between; /* Ensure the counters are spaced out */
+    gap: 50px; /* Adjust the gap between counters as needed */
+    flex-wrap: wrap; /* Allow wrapping if the screen is narrow */
 }
 
 .plus-sign {
@@ -186,7 +181,6 @@ body::after {
 }
 
 .counter-wrapper::before {
-    position: absolute;
     content: "";
     content: 0;
     top: 0;
@@ -195,11 +189,12 @@ body::after {
     height: 100%;
     z-index: 1;
 }
+
 .counter {
     text-align: center;
     color: #000;
-    z-index: 2;
-    position: relative;
+    flex: 1 1 45%; /* Allow counters to take up equal space, adjust based on your preference */
+    min-width: 200px; /* Ensure counters don't become too small */
 }
 
 .counter::before {
@@ -219,6 +214,10 @@ body::after {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
+}
+
+.counter-wrapper .counter {
+    margin-bottom: 20px; /* Space between counters vertically */
 }
 .counter .count {
     font-size: 5rem;

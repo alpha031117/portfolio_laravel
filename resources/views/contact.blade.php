@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('title', 'Contact')
+@extends('layouts.master')
+@section('title', 'Contact Us')
 @section('content')
 
     <div id="carouselExample" class="carousel slide">

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('title', 'Home Page')
 
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="lc-block d-grid d-md-flex justify-content-md-start">
-                    <a class="btn btn-primary px-4 me-md-2" style="cursor: none;" href="#">
+                    <a class="btn btn-primary px-4 me-md-2" style="cursor: none;" href="/about">
                         <x-iconsax-bro-more-square class="text-current"
                             style="width: 20px; height: 20px; margin-bottom: 3px;" />
                         &nbsp;&nbsp; Know more about me!
@@ -82,12 +82,12 @@
                 <div class="lc-block mb-3">
                     <div editable="rich">
                         <p class="lead animated-text text-muted">
-                            A fullstack software engineer with a passion for web2/web3 development.
+                            I'm a fullstack developer with a keen eye for design.
                         </p>
                     </div>
                 </div>
                 <div class="lc-block d-grid d-md-flex justify-content-md-start">
-                    <a class="btn btn-primary px-4 me-md-2" style="cursor: none;" href="#">
+                    <a class="btn btn-primary px-4 me-md-2" style="cursor: none;" href="/about">
                         <x-iconsax-bro-more-square class="text-current"
                             style="width: 20px; height: 20px; margin-bottom: 3px;" />
                         &nbsp;&nbsp; Know more about me!
