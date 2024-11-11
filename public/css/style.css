@@ -1,11 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
 /* Hide the default cursor on all elements, including interactive ones */
-*, button, a, input, select, textarea {
+*,
+button,
+a,
+input,
+select,
+textarea {
     cursor: none;
 }
 
 /* Custom cursor styling */
 body::after {
-    content: '';
+    content: "";
     position: fixed;
     width: 30px;
     height: 30px;
@@ -17,8 +26,6 @@ body::after {
     left: var(--cursorX);
     top: var(--cursorY);
 }
-
-
 
 /* Home Page Animated Text */
 .animated-text {
@@ -34,14 +41,19 @@ body::after {
 
 /* Blinking light blue circle cursor */
 .animated-text::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 0px; /* Position circle next to the text */
     top: 20%;
     transform: translateY(-50%); /* Center vertically with the text */
     width: 10px; /* Circle size */
     height: 10px; /* Circle size */
-    background-color: rgba(101, 216, 255, 0.9); /* Light blue color with slight transparency */
+    background-color: rgba(
+        101,
+        216,
+        255,
+        0.9
+    ); /* Light blue color with slight transparency */
     border-radius: 50%; /* Make it circular */
     animation: blink 0.75s step-end infinite;
 }
@@ -78,10 +90,10 @@ body::after {
 /* Ensure carousel controls are visible and well-positioned */
 .carousel-control-prev,
 .carousel-control-next {
-    position: absolute;  /* Position them absolutely to the sides */
-    top: 50%;            /* Center the controls vertically */
+    position: absolute; /* Position them absolutely to the sides */
+    top: 50%; /* Center the controls vertically */
     transform: translateY(-50%); /* Offset for proper vertical centering */
-    z-index: 10;         /* Ensure controls are above carousel content */
+    z-index: 10; /* Ensure controls are above carousel content */
 }
 
 .carousel-control-prev,
@@ -93,7 +105,6 @@ body::after {
 /* Make carousel control icons black */
 /* Make the carousel control buttons black */
 
-
 .carousel-control-prev,
 .carousel-control-next {
     border-color: blue; /* Optional: changes the border to match the icons */
@@ -102,10 +113,410 @@ body::after {
 /* Change the carousel control icons (previous and next) to primary blue using CSS filters */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(31%) sepia(73%) saturate(513%) hue-rotate(177deg) brightness(96%) contrast(97%);
+    filter: invert(31%) sepia(73%) saturate(513%) hue-rotate(177deg)
+        brightness(96%) contrast(97%);
 }
-
 
 .navbar-nav .nav-link.active {
     color: #fff; /* Active link color */
+}
+
+.counter-section i {
+    display: block;
+    margin: 0 0 10px;
+}
+.counter-section span.counter {
+    font-size: 40px;
+    color: #000;
+    line-height: 60px;
+    display: block;
+    /* font-family: "Oswald", sans-serif; */
+    letter-spacing: 2px;
+}
+.counter-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.counter-icon {
+    top: 25px;
+    position: relative;
+}
+.counter-style2 .counter-title {
+    letter-spacing: 0.55px;
+    float: left;
+}
+.counter-style2 span.counter {
+    letter-spacing: 0.55px;
+    float: left;
+    margin-right: 10px;
+}
+.counter-style2 i {
+    float: right;
+    line-height: 26px;
+    margin: 0 10px 0 0;
+}
+.counter-subheadline span {
+    float: right;
+}
+
+.medium-icon {
+    font-size: 40px !important;
+    margin-bottom: 15px !important;
+}
+
+.counter-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Adjust the gap between counters */
+}
+
+.count-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust gap between the number and "+" sign */
+}
+
+.plus-sign {
+    font-size: inherit;
+}
+
+.counter p {
+    margin-top: 5px; /* Adjusts spacing between the count and description text */
+}
+
+.counter-wrapper::before {
+    position: absolute;
+    content: "";
+    content: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.counter {
+    text-align: center;
+    color: #000;
+    z-index: 2;
+    position: relative;
+}
+
+.counter::before {
+    position: absolute;
+    content: "";
+    bottom: -2rem;
+    left: 50%;
+    width: 20%;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.counter .count {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.counter p {
+    font-size: 1.4rem;
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media (max-width: 768px) {
+    .counter-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 8rem;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .counter-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Custom animation for progress bar width */
+@keyframes reactAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes bootstrapAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes flutterAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes htmlAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes cssAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes laravelAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes mysqlAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes pythonAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+@keyframes javaAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes javascriptAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes phpAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+/* Apply animations to progress bars */
+.react-animation {
+    animation: reactAnimation 4s ease-out forwards;
+}
+
+.bootstrap-animation {
+    animation: bootstrapAnimation 4s ease-out forwards;
+}
+
+.flutter-animation {
+    animation: flutterAnimation 4s ease-out forwards;
+}
+
+.html-animation {
+    animation: htmlAnimation 4s ease-out forwards;
+}
+
+.css-animation {
+    animation: cssAnimation 4s ease-out forwards;
+}
+
+.laravel-animation {
+    animation: laravelAnimation 4s ease-out forwards;
+}
+
+.mysql-animation {
+    animation: mysqlAnimation 4s ease-out forwards;
+}
+
+.python-animation {
+    animation: pythonAnimation 4s ease-out forwards;
+}
+
+.java-animation {
+    animation: javaAnimation 4s ease-out forwards;
+}
+
+.javascript-animation {
+    animation: javascriptAnimation 4s ease-out forwards;
+}
+
+.php-animation {
+    animation: phpAnimation 4s ease-out forwards;
+}
+
+/* Optional: Styling for progress value */
+.progress-value {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-timeline {
+    position: relative;
+}
+
+.main-timeline::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background: #007bff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline {
+    position: relative;
+    width: 50%;
+    margin: 40px 0;
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start below final position */
+    transition: all 1s ease; /* Smooth transition for animation */
+}
+
+.timeline.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    top: 50%;
+    right: -10px;
+    z-index: 1;
+}
+
+.timeline.right::after {
+    left: -10px;
+}
+
+.timeline .card {
+    position: relative;
+    margin-right: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline .card:hover {
+    transform: translateY(-5px);
+}
+
+.timeline.right .card {
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+.timeline-badge {
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.timeline.right .timeline-badge {
+    left: 20px;
+}
+
+.timeline.right {
+    left: 50%;
+}
+
+.timeline.left {
+    left: 0;
+}
+
+@media (max-width: 767px) {
+    .main-timeline::after {
+        left: 40px;
+    }
+
+    .timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        left: 0 !important;
+    }
+
+    .timeline::after {
+        left: 30px;
+    }
+
+    .timeline .card {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .timeline-badge {
+        left: 20px !important;
+        right: auto !important;
+    }
 }
