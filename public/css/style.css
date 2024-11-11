@@ -249,8 +249,26 @@ body::after {
     }
 }
 
-/* Custom animation for progress bar width */
-@keyframes reactAnimation {
+/* Alpha Progress Bar Percentage */
+@keyframes alphaNextjsAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes alphaTailwinAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes alphaReactAnimation {
     from {
         width: 0%;
     }
@@ -259,34 +277,7 @@ body::after {
     }
 }
 
-@keyframes bootstrapAnimation {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 40%;
-    }
-}
-
-@keyframes flutterAnimation {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 70%;
-    }
-}
-
-@keyframes htmlAnimation {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 90%;
-    }
-}
-
-@keyframes cssAnimation {
+@keyframes alphaBootstrapAnimation {
     from {
         width: 0%;
     }
@@ -295,16 +286,16 @@ body::after {
     }
 }
 
-@keyframes laravelAnimation {
+@keyframes alphaFlutterAnimation {
     from {
         width: 0%;
     }
     to {
-        width: 30%;
+        width: 50%;
     }
 }
 
-@keyframes mysqlAnimation {
+@keyframes alphaHtmlAnimation {
     from {
         width: 0%;
     }
@@ -313,16 +304,16 @@ body::after {
     }
 }
 
-@keyframes pythonAnimation {
+@keyframes alphaCSSAnimation {
     from {
         width: 0%;
     }
     to {
-        width: 20%;
+        width: 80%;
     }
 }
 
-@keyframes javaAnimation {
+@keyframes alphaLaravelAnimation {
     from {
         width: 0%;
     }
@@ -331,7 +322,7 @@ body::after {
     }
 }
 
-@keyframes javascriptAnimation {
+@keyframes alphaDjangoAnimation {
     from {
         width: 0%;
     }
@@ -340,7 +331,25 @@ body::after {
     }
 }
 
-@keyframes phpAnimation {
+@keyframes alphaFastapiAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes alphaPythonAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes alphaMySQLAnimation {
     from {
         width: 0%;
     }
@@ -349,49 +358,250 @@ body::after {
     }
 }
 
-/* Apply animations to progress bars */
-.react-animation {
-    animation: reactAnimation 4s ease-out forwards;
+@keyframes alphaJavaAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
 }
 
-.bootstrap-animation {
-    animation: bootstrapAnimation 4s ease-out forwards;
+@keyframes alphaJavascriptAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
 }
 
-.flutter-animation {
-    animation: flutterAnimation 4s ease-out forwards;
+@keyframes alphaPhpAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
 }
 
-.html-animation {
-    animation: htmlAnimation 4s ease-out forwards;
+/* Alpha Progress Bar  */
+.alpha-nextjs-animation {
+    animation: alphaNextjsAnimation 4s ease-out forwards;
 }
 
-.css-animation {
-    animation: cssAnimation 4s ease-out forwards;
+.alpha-tailwind-animation {
+    animation: alphaTailwinAnimation 4s ease-out forwards;
 }
 
-.laravel-animation {
-    animation: laravelAnimation 4s ease-out forwards;
+.alpha-react-animation {
+    animation: alphaReactAnimation 4s ease-out forwards;
 }
 
-.mysql-animation {
-    animation: mysqlAnimation 4s ease-out forwards;
+.alpha-bootstrap-animation {
+    animation: alphaBootstrapAnimation 4s ease-out forwards;
 }
 
-.python-animation {
-    animation: pythonAnimation 4s ease-out forwards;
+.alpha-flutter-animation {
+    animation: alphaFlutterAnimation 4s ease-out forwards;
 }
 
-.java-animation {
-    animation: javaAnimation 4s ease-out forwards;
+.alpha-html-animation {
+    animation: alphaHtmlAnimation 4s ease-out forwards;
 }
 
-.javascript-animation {
-    animation: javascriptAnimation 4s ease-out forwards;
+.alpha-css-animation {
+    animation: alphaCSSAnimation 4s ease-out forwards;
 }
 
-.php-animation {
-    animation: phpAnimation 4s ease-out forwards;
+.alpha-laravel-animation {
+    animation: alphaLaravelAnimation 4s ease-out forwards;
+}
+
+.alpha-django-animation {
+    animation: alphaDjangoAnimation 4s ease-out forwards;
+}
+
+.alpha-fastapi-animation {
+    animation: alphaFastapiAnimation 4s ease-out forwards;
+}
+
+.alpha-python-animation {
+    animation: alphaPythonAnimation 4s ease-out forwards;
+}
+
+.alpha-mysql-animation {
+    animation: alphaMySQLAnimation 4s ease-out forwards;
+}
+
+.alpha-java-animation {
+    animation: alphaJavaAnimation 4s ease-out forwards;
+}
+
+.alpha-javascript-animation {
+    animation: alphaJavascriptAnimation 4s ease-out forwards;
+}
+
+.alpha-php-animation {
+    animation: alphaPhpAnimation 4s ease-out forwards;
+}
+
+/* Alan Progress Bar Percentage */
+@keyframes alanReactAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes alanTailwinAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes alanBootstrapAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes alanFlutterAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes alanHtmlAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes alanCSSAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes alanLaravelAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+@keyframes alanMySQLAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes alanPythonAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+@keyframes alanJavaAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes alanJavascriptAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes alanPhpAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+/* alan Progress Bar  */
+.alan-tailwind-animation {
+    animation: alanTailwinAnimation 4s ease-out forwards;
+}
+
+.alan-react-animation {
+    animation: alanReactAnimation 4s ease-out forwards;
+}
+
+.alan-bootstrap-animation {
+    animation: alanBootstrapAnimation 4s ease-out forwards;
+}
+
+.alan-flutter-animation {
+    animation: alanFlutterAnimation 4s ease-out forwards;
+}
+
+.alan-html-animation {
+    animation: alanHtmlAnimation 4s ease-out forwards;
+}
+
+.alan-css-animation {
+    animation: alanCSSAnimation 4s ease-out forwards;
+}
+
+.alan-laravel-animation {
+    animation: alanLaravelAnimation 4s ease-out forwards;
+}
+
+.alan-python-animation {
+    animation: alanPythonAnimation 4s ease-out forwards;
+}
+
+.alan-mysql-animation {
+    animation: alanMySQLAnimation 4s ease-out forwards;
+}
+
+.alan-java-animation {
+    animation: alanJavaAnimation 4s ease-out forwards;
+}
+
+.alan-javascript-animation {
+    animation: alanJavascriptAnimation 4s ease-out forwards;
+}
+
+.alan-php-animation {
+    animation: alanPhpAnimation 4s ease-out forwards;
 }
 
 /* Optional: Styling for progress value */
@@ -518,4 +728,21 @@ body::after {
         left: 20px !important;
         right: auto !important;
     }
+}
+
+#alpha-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Vertically center items */
+}
+
+#alpha-section .col-lg-7,
+#alpha-section .col-lg-5 {
+    flex: 1; /* Allow the columns to be flexible and share available space */
+}
+
+#alpha-section img {
+    max-width: 100%;
+    margin-bottom: 15px; /* Adjust as needed */
+    margin-left: 0px;
 }

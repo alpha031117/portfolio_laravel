@@ -109,6 +109,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, observerOptions);
 
+    // Select all progress bars with the 'progress-bar' class
+    const progressBars = document.querySelectorAll(".progress-bar");
+
+    // Loop through each progress bar
+    progressBars.forEach((progressBar) => {
+        // Wait for the width animation to end (4 seconds duration)
+        setTimeout(function () {
+            // Add the 'progress-bar-animated' class after the width animation
+            progressBar.classList.add("progress-bar-animated");
+        }, 4000); // 4000ms = 4 seconds (the duration of the animation)
+    });
+
     // Observe sections
     document.querySelectorAll(".counter-section").forEach((section) => {
         observer.observe(section);
